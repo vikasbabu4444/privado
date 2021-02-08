@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Home" >
+
+    <TextView
+        android:id="@+id/nonotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No Notes !"
+        android:textSize="40sp" 
+        android:textColor="#FEF0DB"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/allnotestitles"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/addnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:onClick="@layout/activity_addnote"
+        android:src="@drawable/plus" />
+
+</RelativeLayout>

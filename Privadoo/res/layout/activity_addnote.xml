@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Addnote" >
+
+    <EditText
+        android:id="@+id/addtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Title"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/addnotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addtitle"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        android:textColor="#ffffff" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:background="#000000"
+        android:src="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/notetitlenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/back"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/back"
+        android:text="Add New Note"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/back"
+        android:background="#000000"
+        android:src="@drawable/thickmark" />
+
+</RelativeLayout>

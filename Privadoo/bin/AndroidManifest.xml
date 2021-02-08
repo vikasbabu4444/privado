@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Vikas.privadoo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.Vikas.privadoo.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.Vikas.privadoo.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.Vikas.privadoo.Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.Vikas.privadoo.Addnote"
+            android:label="@string/title_activity_addnote" >
+        </activity>
+        <activity
+            android:name="com.Vikas.privadoo.Entry"
+            android:label="@string/title_activity_entry" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Vikas.privadoo.Details"
+            android:label="@string/title_activity_details" >
+        </activity>
+        <activity
+            android:name="com.Vikas.privadoo.Privado"
+            android:label="@string/title_activity_privado" >
+        </activity>
+    </application>
+
+</manifest>
